@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from PYTHALGORAS.views import firstview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('first/', firstview), 
+
 ]

@@ -1,0 +1,21 @@
+ls
+1. Make a folder called PYTHALGORAS, and go there
+
+> mkdir PYTHALGORAS
+> cd PYTHALGORAS
+> ls
+> git clone  <url to you repository>
+> ls
+> cd PYTHAlGORAS/
+>  django-admin startproject PYTHALGORAS
+> ls
+>  cd PYTHALGORAS
+>  python manage.py runserver
+>>>> Check if the project is working on browser
+> cd ..
+> git add PYTHALGORAS/*
+> git add PYTHALGORAS
+>  git commit -m "Django First Commit"
+>  git remote add PYTHAlGORAS https://github.com/NEHA688/PYTHAlGORAS.git
+>  git push PYTHAlGORAS main
+>  history > commands.txt
