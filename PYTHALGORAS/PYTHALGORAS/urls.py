@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from PYTHALGORAS.views import firstview
+from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first/', firstview), 
+    path('firstapp/',include("firstapp.urls")),
 
 ]
