@@ -4,6 +4,7 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render  # Ensure render is imported
 # first function 
 def firstappview(request):
     return HttpResponse("This is my first app")
@@ -27,4 +28,9 @@ def fourthview(request):
      analyze data, recognize patterns, and make informed decisions.
     """
     return HttpResponse(myhtml)
+# fifth function 
+def fifthview(request):
+    context = {'name': 'Neha Thakur'}  # Proper spacing for readability
+    return render(request, 'firstapp/introduction_to_ai.html', context)  # Space after comma
+
 
