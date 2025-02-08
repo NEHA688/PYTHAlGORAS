@@ -13,5 +13,6 @@ urlpatterns = [
     path('view4/',views.fourthview),
    # path('view5/',views.fifthview),
     path('view5/',views.fifthview,name='view5'),
+    path('calcl/' ,views.simplecalculator_v1_view, name='calcl'),
 
 ]
