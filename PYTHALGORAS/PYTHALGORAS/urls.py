@@ -18,10 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from PYTHALGORAS.views import firstview
 from django.urls import include
+from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('first/', firstview), 
     path('firstapp/',include("firstapp.urls")),
-
+    path ('' ,include("users.urls")),
+   
+   
 ]
