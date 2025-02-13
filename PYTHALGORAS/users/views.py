@@ -1,3 +1,7 @@
+# "AUTHER - NEHA THAKUR'
+# " DATE - 11 /02/2025 "
+
+
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect, render
