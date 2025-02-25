@@ -25,6 +25,8 @@ urlpatterns = [
     path('first/', firstview), 
     path('firstapp/',include("firstapp.urls")),
     path ('' ,include("users.urls")),
+    # path('' ,include("profiles.urls")),
+    path("", include("profiles.urls")),
    
    
 ]
