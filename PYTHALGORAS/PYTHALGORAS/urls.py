@@ -1,5 +1,5 @@
 """
-URL configuration for PYTHALGORAS project.
+URL configuration for pythalgoras project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,17 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from PYTHALGORAS.views import firstview
-from django.urls import include
-from django.urls import include, path
+from.import views
+from django.urls import include 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('first/', firstview), 
+   # path('hello/',Pythalgoras),
     path('firstapp/',include("firstapp.urls")),
-    path ('' ,include("users.urls")),
-    # path('' ,include("profiles.urls")),
-    path("", include("profiles.urls")),
-   
-   
+    path('' ,include("users.urls")),
+    path('' ,include('profiles.urls')),
 ]
+        
